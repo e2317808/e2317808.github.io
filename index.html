@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<!-- lang属性：ページの言語を指定できる-->
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Muro">
+
+    <meta name="keywords" content="html, css, javascript">
+
+    <title>lesson13</title>
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>コンリテ２</h1>
+        
+    </header>
+    <main>
+        <section>
+            <h2>jQuery</h2>
+
+            <div>
+                <section>
+                    <h3>セレクタ</h3>
+                    <div>
+                        <p id="test-p-1">ta</p>
+                        <p class="test-p-2">na</p>
+                        <p id="test-p-3">ka</p>
+                    </div>
+                </section>
+               
+                <section>
+                    <h3>メソッド</h3>
+                    <div>
+                        <button type="button" onclick="toggle()">表示・非表示</button>
+                        <button type="button" onclick="slide()">スライド</button>
+                        <button type="button" onclick="fade()">フェード</button>
+                        <button type="button" onclick="color()">CSS表示</button>
+                        <button type="button" onclick="customAnimate()">カスタムアニメーション</button>
+                    </div>
+                </section>
+                
+                <section>
+                    <h3>イベントハンドラ</h3>
+                    <div>
+                        <form action="">
+                            <input id="input-1" type="text">
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section>
+            <h2>Chart.js</h2>
+        </section>
+
+
+    </main>
+
+    <footer>
+        Copyright &copy Kato Hiroshi All Rights Reserved
+    </footer>
+
+    <!-- 外部のjavascriptを読み込む -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
+
+    <script src="js/jquery-test.js"></script>
+    <script src="./js/chart-test.js"></script>
+</body>
+
+</html>
