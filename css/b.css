@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+
+
+#list{
+    border: 4px double black;
+    margin: 4px;
+    padding: auto;
+    background-color: lightyellow;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+        "header-A header-A"
+        "main-A aside-A"
+        "footer-A footer-A"
+    ;
+}
+
+header{
+    background-color: lightblue;
+    grid-area: header-A;
+}
+
+main{
+    background-color: white;
+    grid-area: main-A;
+}
+
+aside{
+    background-color: lightgoldenrodyellow;
+    grid-area: aside-A;
+}
+
+footer{
+    /* background-color: lightgreen; */
+    grid-area: footer-A;
+}
+
+h3{
+    border-bottom: 4px solid black;
+    border-radius: 4px;
+    background-color: lightgray;
+}
+
+img{
+    border: 2px solid black;
+}

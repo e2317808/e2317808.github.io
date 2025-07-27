@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-<!-- lang属性：ページの言語を指定できる-->
 <html lang="ja">
 
 <head>
@@ -11,71 +10,77 @@
 
     <meta name="keywords" content="html, css, javascript">
 
-    <title>lesson13</title>
+    <title>ギター</title>
 
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: solid;
+        }
+    </style>
 
-
+    <link rel="stylesheet" href="../work1/css/main.css">
 </head>
 
 <body>
+    <div class="container">
+        <header>
+            <h1>ギター</h1>
+        </header>
 
-    <header>
-        <h1>コンリテ２</h1>
-        
-    </header>
-    <main>
-        <section>
-            <h2>jQuery</h2>
+        <aside>
+            <p>関連項目</p>
+            <ul>
+                <li><a href="../work1/a.html">ギターのブランド</a></li>
+                <li><a href="../work1/b.html">有名なギタリスト</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section>
+                <p>一言にギターと言っても実は様々な種類があります。ここでは代表的なモデルをいくつか紹介します。</p>
 
-            <div>
-                <section>
-                    <h3>セレクタ</h3>
-                    <div>
-                        <p id="test-p-1">ta</p>
-                        <p class="test-p-2">na</p>
-                        <p id="test-p-3">ka</p>
-                    </div>
-                </section>
-               
-                <section>
-                    <h3>メソッド</h3>
-                    <div>
-                        <button type="button" onclick="toggle()">表示・非表示</button>
-                        <button type="button" onclick="slide()">スライド</button>
-                        <button type="button" onclick="fade()">フェード</button>
-                        <button type="button" onclick="color()">CSS表示</button>
-                        <button type="button" onclick="customAnimate()">カスタムアニメーション</button>
-                    </div>
-                </section>
-                
-                <section>
-                    <h3>イベントハンドラ</h3>
-                    <div>
-                        <form action="">
-                            <input id="input-1" type="text">
-                        </form>
-                    </div>
-                </section>
-            </div>
-        </section>
+                <h2>ギターの種類</h2>
+                <ul id="list">
+                    <li><a href="#sutorato">ストラトキャスター</a></li>
+                    <li><a href="#terekyasu">テレキャスター</a></li>
+                    <li><a href="#resupo-ru">レスポール</a></li>
+                    <li><a href="#sg">SG</a></li>
+                    <li><a href="#jazzmas">ジャズマスター</a></li>
+                </ul>
 
-        <section>
-            <h2>Chart.js</h2>
-        </section>
+                <h3 id="sutorato">ストラトキャスター</h3>
+                <img src="image/model/image.png" alt="ストラト" width="300" height="100%">
+                <p>もっともポピュラーで定番のモデル。あらゆるジャンルに使えるオールラウンダー。</p>
+
+                <h3 id="terekyasu">テレキャスター</h3>
+                <img src="image/model/tere.jpg" alt="テレキャスター" width="300" height="100%">
+                <p>歯切れのよい音が特徴で、ロックやポップスなど幅広く使われる。</p>
+
+                <h3 id="resupo-ru">レスポール</h3>
+                <img src="image/model/resu.jpg" alt="レスポール" width="300" height="100%">
+                <p>ストラトキャスターと並ぶ定番のモデルで、ハードなロックに適している。ボディが重く、表面は湾曲している。</p>
+
+                <h3 id="sg">SG</h3>
+                <img src="image/model/sg.jpg" alt="SG" width="300" height="100%">
+                <p>レスポールの後継機で、短所であったボディの重さを軽量化したモデル。レスポール同様、ハードなロックに向いている。</p>
+
+                <h3 id="jazzmas">ジャズマスター</h3>
+                <img src="image/model/jazz.jpg" alt="ジャズマスター" width="300" height="100%">
+                <p>ストラトキャスターの上位機種として発売されたモデル。パワーがないため、ロックには不向き。</p>
+            </section>
+        </main>
+
+        <footer>
 
 
-    </main>
+            Copyright &copy; Muro, All Right Reserved.
+        </footer>
+    </div>
 
-    <footer>
-        Copyright &copy Kato Hiroshi All Rights Reserved
-    </footer>
-
-    <!-- 外部のjavascriptを読み込む -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
-
-    <script src="js/jquery-test.js"></script>
-    <script src="./js/chart-test.js"></script>
+    <script src="js/jquery_home.js"></script>
 </body>
 
 </html>
